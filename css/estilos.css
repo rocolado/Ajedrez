@@ -1,0 +1,416 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(23, 23, 23);
+    margin: 0px;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    padding: 1% 0% 2% 0%;
+    background-color: rgb(0, 0, 0);
+}
+
+header .anchoSecciones,
+#index .anchoSecciones {
+    width: 73%;
+    margin: auto;
+}
+
+header .anchoSecciones img {
+    width: 3%;
+    display: inline-block;
+}
+
+header .anchoSecciones p {
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: white;
+    margin: 0% 0% 0% 1%;
+    display: inline-block;
+}
+
+header .anchoSecciones p .x {
+    color: rgb(153, 17, 17);
+}
+
+/* nav */
+
+nav ul {
+    list-style: none;
+    padding: 0%;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li::before {
+    content: "·";
+    font-size: 1.5rem;
+    color: white;
+    padding-right: 5px;
+}
+
+nav ul li:first-child::before {
+    content: "";
+}
+
+nav ul li .active {
+    font-weight: bold;
+}
+
+/* main shared*/
+
+.linksHeaderFooter {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+}
+
+.linksHeaderFooter:hover {
+    color: rgb(153, 17, 17);
+}
+
+main {
+    width: 73%;
+    margin: auto;
+}
+
+main h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 5% 0% 3% 0%;
+}
+
+main h2,
+main h3 {
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+
+main h2 {
+    font-size: 2.2rem;
+}
+
+main h3 {
+    font-size: 1.5rem;
+}
+
+main .textoBase {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 2%;
+}
+
+main .link {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+main .link:hover {
+    color: rgb(153, 17, 17);
+}
+
+/* index */
+
+#index, html {
+    height: 100%;
+}
+
+#index {
+    background-image: url("../img/home-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#index .anchoSecciones {
+    margin: 1% auto 3% auto;
+}
+
+#index main #tituloPortada {
+    overflow: auto;
+}
+
+#index main #tituloPortada img {
+    width: 7%;
+    padding-left: 1%;
+    display: inline-block;
+}
+
+#index main #tituloPortada h1 {
+    font-size: 11.3rem;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    display: inline-block;
+    margin: 0%;
+}
+
+#index main #tituloPortada .x {
+    color: rgb(153, 17, 17);
+}
+
+#index main #tituloPortada p {
+    font-size: 2.9rem;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+}
+
+#index nav ul li .linksHeaderFooter{
+    font-size: 1.6rem;
+}
+
+/* elAjedrez */
+
+main #elAjedrez abbr {
+    text-decoration: none;
+}
+
+main #elAjedrez figure {
+    text-align: center;
+}
+
+main #elAjedrez figure img {
+    width: 625px;
+}
+
+main #elAjedrez figure figcaption {
+    font-size: 1rem;
+    margin-bottom: 3%;
+}
+
+main #elAjedrez table {
+    width: 75%;
+    font-size: 1.4rem;
+    text-align: left;
+    margin: 0% auto 2% auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid rgb(23, 23, 23);
+}
+
+main #elAjedrez table caption {
+    font-size: 1.8rem;
+    border: 1px solid rgb(23, 23, 23);
+    border-bottom: none;
+}
+
+main #elAjedrez table thead {
+    border: 1px solid rgb(23, 23, 23);
+}
+
+main #elAjedrez table thead th:nth-child(1),
+main #elAjedrez table thead th:nth-child(2),
+main #elAjedrez table thead th:nth-child(3) {
+    width: 20%;
+}
+
+main #elAjedrez table thead th:nth-child(4) {
+    width: 40%;
+}
+
+main #elAjedrez table thead th {
+    font-size: 1.2rem;
+    padding: 1% 0%;
+}
+
+main #elAjedrez table thead th:first-child,
+main #elAjedrez table tbody th {
+    padding: 0% 1%;
+}
+
+main #elAjedrez table tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+main #elAjedrez table tbody th {
+    font-size: 1.5rem;
+}
+
+main #elAjedrez table tbody td {
+    padding: 2% 0%;
+}
+
+/* cursosAjedrez */
+
+main #cursosAjedrez .anchoListas {
+    width: 75%;
+}
+
+main #cursosAjedrez .anchoListas ul {
+    list-style: square;
+}
+
+main #cursosAjedrez .identacionLista {
+    margin-left: auto;
+}
+
+main #cursosAjedrez .anchoListas .paddingCursos2021 {
+    padding-left: 3%;
+}
+
+main #cursosAjedrez .anchoListas dl dt {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-bottom: 1px solid rgb(23, 23, 23);
+}
+
+/* formulario */
+
+main #formulario {
+    padding: 0% 7% 0% 7%;
+}
+
+main #formulario #camposObligatorios {
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 0% 1%;
+    background-color: rgb(228, 228, 228);
+}
+
+main #formulario form fieldset {
+    margin: 2% 0%;
+    padding: 3% 3% 5% 3%;
+}
+
+main #formulario form fieldset legend {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+main #formulario form fieldset label {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 3%;
+}
+
+main #formulario form fieldset select,
+main #formulario form fieldset select option {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+}
+
+main #formulario form fieldset select {
+    height: 65px;
+    width: 33%;
+    border-radius: 0px;
+    display: block;
+    padding: 0% 2%;
+}
+
+main #formulario form #datosPersonales .camposDatos {
+    display: inline-block;
+    width: 49%;
+}
+
+main #formulario form #datosPersonales .camposDatos input,
+main #formulario form fieldset textarea {
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 0px;
+}
+
+main #formulario form #datosPersonales .camposDatos input {
+    width: 90%;
+    height: 65px;
+    padding: 0% 3%;
+    margin: 0% 0% 3% 0%;
+}
+
+main #formulario form #datosPersonales .camposDatos #fecha {
+    width: 63%;
+}
+
+main #formulario form fieldset textarea {
+    width: 94%;
+    height: 250px;
+    padding: 2%;
+    margin-bottom: 2%;
+    overflow: auto;
+}
+
+main #formulario #infoDatos {
+    padding: 3% 4% 0% 4%;
+}
+
+main #formulario #infoDatos #politicaPrivacidad {
+    font-size: 1.5rem;
+}
+
+main #formulario #infoDatos input[type=checkbox] {
+    margin-right: 1%;
+    transform: scale(1.3);
+}
+
+main #formulario #infoDatos #envio {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 35px;
+    text-decoration: none;
+    background-color: rgb(153, 17, 17);
+}
+
+main #formulario #infoDatos #envio:hover {
+    cursor: pointer;
+    background-color: rgb(109, 6, 6);
+}
+
+/* footer index y general */
+
+footer {
+    width: 100%;
+    padding: 1% 0% 3% 0%;
+    margin-top: 5%;
+}
+
+footer .anchoSecciones {
+    width: 73%;
+    margin: auto;
+}
+
+#index footer .anchoSecciones {
+    margin: 0% auto 0% auto;
+}
+
+footer .anchoSecciones p,
+footer .anchoSecciones .linksHeaderFooter {
+    font-size: 1rem;
+}
+
+footer .anchoSecciones p {
+    color: white;
+}
+
+footer .anchoSecciones ul {
+    padding-left: 0%;
+}
+
+footer .anchoSecciones ul li {
+    display: inline-block;
+}
+
+footer .anchoSecciones ul li::before {
+    content: "·";
+    font-size: 1.5rem;
+    color: white;
+    padding: 0px 10px;
+}
+
+footer .anchoSecciones ul li:first-child::before {
+    content: "";
+    padding: 0px;
+}
+
+.footerGeneral {
+    background-color: rgb(0, 0, 0);
+}

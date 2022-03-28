@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Inscripción a los cursos</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  
+</head>
+
+<body>
+    <header>
+        <div class="anchoSecciones">
+            <a href="index.html">
+                <img src="img/isologo-white.png" alt="Logo torrextorre">
+                <p>torre<span class="x">x</span>torre</p>
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="el-ajedrez.html" class="linksHeaderFooter">El ajedrez</a></li>
+                    <li><a href="cursos.html" class="linksHeaderFooter">Cursos</a></li>
+                    <li><a href="inscripcion.html" class="linksHeaderFooter active">Inscripción</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="formulario">
+            <h1>Inscripción a los cursos</h1>
+    
+            <p id="camposObligatorios">Los campos señalados con * son obligatorios</p>
+            
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Selección del curso</legend>
+
+                    <p>
+                        <label for="curso">Escoja un curso *</label>
+                        <select id="curso" name="curso" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="nivel-inicial-medio">Nivel inicial y medio</option>
+                            <option value="nivel-avanzado">Nivel avanzado</option>
+                        </select>
+                    </p>
+                </fieldset>
+    
+                <fieldset id="datosPersonales">
+                    <legend>Datos personales y de contacto</legend>
+
+                    <p class="camposDatos">
+                        <label for="nombre">Nombre *</label>
+                        <input id="nombre" type="text" name="nombre" required pattern="[A-Za-z'-]{2,64}"
+                        title='Sólo se permiten letras, números, "-" y "&#39;" . Tamaño mínimo: 2. Tamaño máximo: 64'>
+                    </p>
+                    <p class="camposDatos">
+                        <label for="apellidos">Apellidos *</label>
+                        <input id="apellidos" type="text" name="apellidos" required pattern="[A-Za-z'-]{2,128}"
+                        title='Sólo se permiten letras, números, "-" y "&#39;". Tamaño mínimo: 2. Tamaño máximo: 128'> 
+                    </p>
+                    <p class="camposDatos">
+                        <label for="correo">Correo electrónico *</label>
+                        <input id="correo" type="email" name="correo" required
+                        title='Incluye un signo "@" en la dirección de correo eléctronico'>
+                    </p>
+                    <p class="camposDatos">
+                        <label for="telefono">Teléfono *</label>
+                        <input id="telefono" type="tel" name="telefono" required
+                        title="Sólo se permiten números">
+                    </p>
+                    <p class="camposDatos">
+                        <label for="fecha">Fecha de nacimiento *</label>
+                        <input id="fecha" type="date" name="fecha" required
+                        title="Selecciona una fecha">
+                    </p>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Otras informaciones</legend>
+
+                    <p>
+                        <label for="mensaje">¿Por qué está interesado en hacer un curso de ajedrez?</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                    </p>
+                    <p>
+                        <label for="medio">¿Por qué medio nos ha conocido?</label>
+                        <select id="medio" name="medio" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="redes-sociales">Redes sociales</option>
+                            <option value="buscadores-internet">Buscadores de Internet</option>
+                            <option value="otro-participante">Otro participante</option>
+                        </select>
+                    </p>
+                </fieldset>
+                
+                <div id="infoDatos">
+                    <p class="textoBase">INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <b>TORRE POR TORRE.</b> <b>Finalidades:</b> recogida de datos 
+                    para la inscripción en los cursos. <b>Legitimación:</b> Consentimiento del interesado. <b>Destinatarios:</b> No están 
+                    previstas cesiones de datos a terceros, excepto obligación legal. <b>Derechos:</b> Puede retirar su consentimiento en 
+                    cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a info@torrextorre.org. 
+                    <b>Información Adicional:</b> Puede ampliar la información en el enlace de Aviso Legal y Política de privacidad.</p>
+            
+                    <p id="politicaPrivacidad" class="textoBase">
+                        <input type="checkbox" value="politicaPrivacidad" required>He leído y acepto la <a href="" class="link">política de privacidad</a>
+                    </p>
+                  
+                    <p><button type="submit" id="envio">ENVIAR</button></p>
+                </div>
+            </form>
+            
+        </section>
+    </main>
+
+    <footer class="footerGeneral">
+        <div class="anchoSecciones">
+            <p>2021 © Rocío Colado Chaves</p>
+
+            <ul>
+                <li><a href="" class="linksHeaderFooter">Aviso legal</a></li>
+                <li><a href="" class="linksHeaderFooter">Política de privacidad</a></li>
+                <li><a href="" class="linksHeaderFooter">Política de cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
